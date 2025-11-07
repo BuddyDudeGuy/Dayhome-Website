@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buddydudeguy.github.io/Dayhome-Website/

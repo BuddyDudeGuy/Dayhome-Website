@@ -3,14 +3,182 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Dayhome — Coming Soon</title>
+  <title>Dayhome – Caring, Safe, Play-Based Learning</title>
+  <meta name="description" content="Warm, licensed dayhome with play-based learning, healthy meals, and a safe, accredited environment.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
+  <script defer src="js/main.js"></script>
+
+  <!-- Local Business / ChildCare schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ChildCare",
+    "name": "Alberta Stars Dayhome",
+    "description": "Play-based learning with nutritious meals in a safe, accredited home.",
+    "telephone": "403-000-0000",
+    "email": "hello@example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Calgary",
+      "addressRegion": "AB",
+      "postalCode": "T0X 0X0"
+    }
+  }
+  </script>
 </head>
 <body>
-  <main style="max-width:720px;margin:10vh auto;text-align:center;font-family:system-ui,Arial,sans-serif">
-    <h1>Dayhome website coming soon</h1>
-    <p>We’re setting things up. Photos, accreditation, and contact details will be here shortly.</p>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#hero">Dayhome</a>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="#gallery">Kids</a></li>
+        <li><a href="#facility">Facility</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#accreditation">Accreditation</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#availability">Availability</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="hero" class="hero">
+    <div class="wrap">
+      <h1>Safe, caring dayhome in Calgary</h1>
+      <p>Play-based learning • Healthy meals • Licensed & accredited</p>
+      <div class="cta">
+        <a class="btn" href="tel:4030000000">Call now</a>
+        <a class="btn btn-ghost" href="#contact">Email / Visit</a>
+      </div>
+    </div>
   </main>
-  <script src="js/main.js"></script>
+
+  <!-- Kids collage/gallery -->
+  <section id="gallery" class="section">
+    <div class="wrap">
+      <h2>Play & learning</h2>
+      <p class="muted">Upload photos to <code>images/kids/</code>. Thumbnails link to full-size.</p>
+      <div class="gallery">
+        <!-- Replace with my photos later. Point data-full to the large image path. -->
+        <img src="images/kids/sample1.jpg" data-full="images/kids/sample1.jpg" alt="Kids painting at a table">
+        <img src="images/kids/sample2.jpg" data-full="images/kids/sample2.jpg" alt="Story time on a rug">
+        <img src="images/kids/sample3.jpg" data-full="images/kids/sample3.jpg" alt="Outdoor play in the yard">
+      </div>
+    </div>
+  </section>
+
+  <!-- Facility -->
+  <section id="facility" class="section alt">
+    <div class="wrap grid-2">
+      <div>
+        <h2>Our space</h2>
+        <ul class="list">
+          <li>Bright indoor playroom with learning centers</li>
+          <li>Fenced backyard for outdoor play</li>
+          <li>Nap area with individual bedding</li>
+          <li>Clean, organized, child-safe environment</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card image-card">
+          <img src="images/facility/room.jpg" alt="Dayhome playroom with shelves and toys">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About provider -->
+  <section id="about" class="section">
+    <div class="wrap grid-2">
+      <div>
+        <h2>About the provider</h2>
+        <p>Hi! I’m <strong>Provider Name</strong>, an early childhood educator with <strong>Level 3</strong> (or relevant certification). I believe in warm relationships, structured routines, and hands-on learning through play.</p>
+        <ul class="chips">
+          <li>First Aid & CPR</li>
+          <li>Food Safety</li>
+          <li>Police Check</li>
+        </ul>
+      </div>
+      <div>
+        <div class="card image-card">
+          <img src="images/provider/headshot.jpg" alt="Dayhome provider portrait">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditation -->
+  <section id="accreditation" class="section alt">
+    <div class="wrap">
+      <h2>Licensed & accredited</h2>
+      <p>We operate under a licensed agency and follow all provincial standards for safety, ratios, and programming. Monthly monitoring and ongoing training keep quality high. Ask us about subsidy and receipts.</p>
+      <!-- Optional: add your agency logo to images/facility/agency.png -->
+      <!-- <img class="agency" src="images/facility/agency.png" alt="Agency logo"> -->
+    </div>
+  </section>
+
+  <!-- Services / Meals -->
+  <section id="services" class="section">
+    <div class="wrap grid-3">
+      <div class="card">
+        <h3>Program</h3>
+        <p>Play-based curriculum: literacy, numeracy, music, art, and outdoor time every day.</p>
+      </div>
+      <div class="card">
+        <h3>Meals</h3>
+        <p>Two snacks + hot lunch following Canada’s Food Guide. Allergy-aware and peanut-safe.</p>
+      </div>
+      <div class="card">
+        <h3>Hours & ages</h3>
+        <p>Mon–Fri • 7:30 am – 5:30 pm • Infants to preschool (customize as needed).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Availability -->
+  <section id="availability" class="section alt">
+    <div class="wrap">
+      <h2>Availability</h2>
+      <p class="muted">Example: “1 spot opening in June; 2 spots in September.” Update this as needed.</p>
+      <details class="card">
+        <summary>Rates & enrollment</summary>
+        <p>Please contact us for current rates. We’ll share our handbook and set up a visit.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap grid-2">
+      <div>
+        <h2>Get in touch</h2>
+        <p><a class="btn" href="tel:4030000000">Call 403-000-0000</a></p>
+        <p><a class="btn btn-ghost" href="mailto:hello@example.com">Email us</a></p>
+        <p class="muted">We’ll reply within one business day.</p>
+      </div>
+      <div>
+        <!-- Replace src with your Google Maps embed link (Google → Share → Embed a map → Copy HTML) -->
+        <div class="map-wrap">
+          <iframe title="Map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  src="" allowfullscreen></iframe>
+          <div class="map-tip">Add your Google Maps embed URL in the <code>src</code> above.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Your Dayhome Name • Calgary, AB</small>
+    </div>
+  </footer>
+
+  <!-- Simple lightbox dialog -->
+  <dialog id="lightbox">
+    <button class="close" aria-label="Close">×</button>
+    <img alt="">
+  </dialog>
 </body>
 </html>
